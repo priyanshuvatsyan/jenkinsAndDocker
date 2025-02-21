@@ -29,3 +29,14 @@ jobs:
 
       - name: Run Docker Container
         run: docker run --rm -d -p 3000:3000 my-node-app
+
+  #it will run only if build succeeds
+  test:
+    runs-on: ubuntu-latest
+    needs: build
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+    
+      - name: Run Tests
+        run: npm test
