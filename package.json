@@ -6,8 +6,12 @@
     "dependencies": {
       "express": "^4.18.2"
     },
-    "scripts": {
-      "start": "node app.js"
-    }
+   "scripts": {
+  "start": "node app.js",
+  "test": "echo \"No tests available\" && exit 0"
+}
+
+    
+    
   }
   
